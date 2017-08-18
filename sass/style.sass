@@ -3,6 +3,7 @@ $nav-text-color-1: rgba(114, 158, 22,1)
 $background-color-1: rgba(0,0,0,0.6)
 $green-color-cover-1: rgba(114, 158, 22,0.4)
 $card-buttom-color: rgba(0,0,0,0.7)
+$menu-font-size: 30px
 $card-height: 90%
 $card-image-1: url('http://i.imgur.com/S4tX7u6.jpg')
 $card-image-2: url('http://i.imgur.com/impWz9e.jpg')
@@ -33,13 +34,10 @@ $today-p-3: 10px
   //   display: none
   // section#section_class
   //   display: none
+  // footer#footer
+  //   display: none
   
-
-    
-    
-
-    
-    
+// ----------
 
 body,html
   margin: 0
@@ -49,7 +47,7 @@ body,html
   
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
   font-weight: bold
-
+// ----------
 // ↑ body and title
 
 .link
@@ -71,7 +69,7 @@ header.joumbotron
     padding: 10px
     color: $color_1
     top: 50%
-    left : 50%
+    left: 50%
     transform: translate(-50%,-50%)
     z-index: 1
     border: 5px solid
@@ -84,39 +82,47 @@ header.joumbotron
     top: 0
     left: 0
     z-index: 0
-.navbar
-  position: fixed
-  width: 100%
-  text-align: center
-  top: 0
-  z-index: 999
-  .link
-    position: relative
-    padding: 10px 77px
-    font-size: 20px
-    display: none
-    background-color: $background-color-1
-    color: $nav-text-color-1
-    font-weight: 900
+
+// ----------
+
+// ↑header 
+// ↓old nav
+
+// ----------
+
+// .navbar
+//   position: fixed
+//   width: 100%
+//   text-align: center
+//   top: 0
+//   z-index: 999
+//   .link
+//     position: relative
+//     padding: 10px 77px
+//     font-size: 20px
+//     display: none
+//     background-color: $background-color-1
+//     color: $nav-text-color-1
+//     font-weight: 900
     
-  .menu
-    display: inline-flex
-    position: relative
-    left: 42%
+//   .menu
+//     display: inline-flex
+//     position: relative
+//     left: 42%
     
-    i
-      font-size: 40px
-      color: $nav-text-color-1
-      padding:  30px 40px
-.navbar.active
-  .link
-    display: block
-  .menu
-    i
-      color: $nav-text-color-1
-      background-color: $background-color-1
+//     i
+//       font-size: 40px
+//       color: $nav-text-color-1
+//       padding:  30px 40px
+// .navbar.active
+//   .link
+//     display: block
+//   .menu
+//     i
+//       color: $nav-text-color-1
+//       background-color: $background-color-1
       
-@media screen and (min-width: 970px)
+// @media screen and (min-width: 970px)
   .navbar
     position: absolute
     top: 560px
@@ -133,7 +139,12 @@ header.joumbotron
       position: fixed
       
 
-// ↑header and nav
+
+
+// ----------
+
+ 
+// ↑old nav
 // ↓section-1
 
 section#section_card
@@ -251,7 +262,7 @@ section#section_card
             bottom: 0px
 // ↑section-1
 // ↓section-2
-
+// ----------
 section#section_today
   position : static
   
@@ -358,10 +369,11 @@ section#section_today
         opacity: 0.3
         right: 18%
 
+// ----------
 
 // ↑section-2
 // ↓section-3
-
+// ----------
 section#section_class
   position: static
   margin: 120px 0 
@@ -417,10 +429,11 @@ section#section_class
           transform: translate(0%,-100%)
 
 
+// ----------
 
 // ↑section-3
 // ↓footer
-
+// ---------
 footer#footer
   
   position : static
@@ -432,7 +445,62 @@ footer#footer
     
   
   
-  
+// ---------
+
 // ↑footer
+// ↓new nav
+// ---------
+.navbar.nav_menu
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 10
+  .container
+    .menu
+      color: $nav-text-color-1
+      left: 90%
+      font-size: $menu-font-size
+      z-index: 11
+    .link
+      display: none
+
+.navbar.nav_list
+  top: -100px
+  text-align: center
+  .container
+    .menu
+      display: none
+    .link
+      padding: 0px 75px
+      display: inline-flex
+      flex-flow: row nowrap
+      font-size: 20px
+      color: $color_1
+      background-color: transparent
+
+.navbar.nav_menu.active
+  position: fixed
+  width: 100%
+  top: 0
+  background-color: $background-color-1
+  .container
+    .menu
+      color: $nav-text-color-1
+      left: 90%
+      font-size: $menu-font-size
+    .link
+      text-align: center
+      display: block
+      position: fixed
+      flex-flow: column nowrap
+      position: relative
+      padding: 10px 77px
+      font-size: 20px
+      color: $nav-text-color-1
+      font-weight: 900
+  
+// ---------
+
+// ↑new nav
 
   

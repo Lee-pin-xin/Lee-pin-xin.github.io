@@ -7,17 +7,18 @@ html
     link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
     link(rel='stylesheet prefetch', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='css/style.css')
-  body
+  body(onload='myfunction()')
     header.joumbotron
       h1 植栽園
       .cover
     nav.navbar
-      a.menu
-        i.fa.fa-reorder
-      a.link 團隊簡介
-      a.link 植栽圖鑑
-      a.link 每日植語
-      a.link 聯絡我們
+      .container
+        a.menu
+          i.fa.fa-reorder
+        a.link 團隊簡介
+        a.link 植栽圖鑑
+        a.link 每日植語
+        a.link 聯絡我們
     section#section_card
       .container
         .row
