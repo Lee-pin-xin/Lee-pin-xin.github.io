@@ -1,0 +1,438 @@
+$color-1: rgba(255,255,255,0.8)
+$nav-text-color-1: rgba(114, 158, 22,1)
+$background-color-1: rgba(0,0,0,0.6)
+$green-color-cover-1: rgba(114, 158, 22,0.4)
+$card-buttom-color: rgba(0,0,0,0.7)
+$card-height: 90%
+$card-image-1: url('http://i.imgur.com/S4tX7u6.jpg')
+$card-image-2: url('http://i.imgur.com/impWz9e.jpg')
+$card-image-3: url('http://i.imgur.com/llzZUGC.jpg')
+$today-circle: rgba(154, 200, 53,1)
+$today-title-color: rgba(230,230,230,1)
+$today-title-1: 40px
+$today-p-1: 14px
+$today-title-2: 30px
+$today-p-2: 12px
+$today-title-3: 20px
+$today-p-3: 10px
+*
+  // border: 1px solid 
+  font-family: 微軟正黑體
+  position: relative
+  
+  // debug
+  // header
+  //   display: none
+    
+  // nav
+  //   display: none
+    
+  section#section_card
+    display: none
+  section#section_today
+    display: none
+  section#section_class
+    display: none
+  
+
+    
+    
+
+    
+    
+
+body,html
+  margin: 0
+  padding: 0
+  
+  
+  
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+
+// ↑ body and title
+
+.link
+  color: $color_1
+  
+
+header.joumbotron
+  
+  background: url("http://i.imgur.com/q44SKvg.jpg")
+  background-size: cover
+  background-position: center
+  position: relative
+  z-index: 0
+  h1
+    position: relative
+    display: inline-block
+    text-align: center
+    margin: 300px 0
+    padding: 10px
+    color: $color_1
+    top: 50%
+    left : 50%
+    transform: translate(-50%,-50%)
+    z-index: 1
+    border: 5px solid
+    font-weight: 900
+  .cover
+    background: $green-color-cover-1
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+.navbar
+  position: fixed
+  width: 100%
+  text-align: center
+  top: 0
+  z-index: 999
+  .link
+    position: relative
+    padding: 10px 77px
+    font-size: 20px
+    display: none
+    background-color: $background-color-1
+    color: $nav-text-color-1
+    font-weight: 900
+    
+  .menu
+    display: inline-flex
+    position: relative
+    left: 42%
+    
+    i
+      font-size: 40px
+      color: $nav-text-color-1
+      padding:  30px 40px
+.navbar.active
+  .link
+    display: block
+  .menu
+    i
+      color: $nav-text-color-1
+      background-color: $background-color-1
+      
+@media screen and (min-width: 970px)
+  .navbar
+    position: absolute
+    top: 560px
+    .link
+      display: inline-flex
+      flex-flow: row nowrap
+      color: $color_1
+      background-color: transparent
+    .menu
+      display: none
+  .navbar.active
+    .link
+      display: inline-flex
+      position: fixed
+      
+
+// ↑header and nav
+// ↓section-1
+
+section#section_card
+  position : static
+  padding-top : 60px
+  padding-bottom : 90px
+  .container
+    top: 50px
+    .row
+      position : relative
+      .h1
+        text-align: center
+      .card
+        height: 450px
+        a
+          .img-1
+            width: 100%
+            height: $card-height
+            background: $card-image-1
+            background-size: cover
+            background-position: center
+            opacity: 0.5
+          .img-2
+            position: relative
+            width: 100%
+            height: $card-height
+            background: $card-image-2
+            background-size: cover
+            background-position: center
+            opacity: 0.5
+            top: 50px
+          .img-3
+            width: 100%
+            height: $card-height
+            background: $card-image-3
+            opacity: 0.5
+            background-size: cover
+            background-position: center
+            
+            
+          .card-cover
+            height: 200px
+            width: 100%
+            background-color: rgba(0,0,0,0.7)
+            bottom: 200px
+            z-index: 1
+          p
+            color: rgba(255,255,255,0.9)
+            padding: 15px 15px
+            padding-bottom: 0px
+            font-size: 14px
+            text-align: justify
+            
+          .card-position-2
+            bottom: 150px
+          .card-position-3
+            bottom: 200px
+        .buttom
+          position: absolute
+          padding: 10px 0px
+          width: 90px
+          bottom: 50px
+          z-index: 1
+          background: $card-buttom-color
+          border-radius: 10%
+          left: 50%
+          transform: translate(-50%,0%)
+          text-align: center
+          a
+            color: $color-1
+            font-size: 20px
+            font-weight: 800
+      .buttom.move-2
+        bottom: 0px
+    
+            
+@media screen and (min-width: 500px) and (max-width: 900px)
+  section#section_card
+    .container
+      .row
+        .card
+          a
+            .img-3
+              top: 50px
+            .card-position-2
+              bottom: 150px
+            .card-position-3
+              bottom: 150px
+            p
+              padding: 15px 
+              padding-bottom: 0px
+          .buttom.move-2
+            bottom: 0px
+          .buttom.move-3
+            bottom: 0px
+@media screen and (max-width: 499px)
+  section#section_card
+    .container
+      .row
+        .card
+          a
+            .img-3
+              top: 50px
+            .card-position-2
+              bottom: 150px
+            .card-position-3
+              bottom: 150px
+            p
+              padding: 15px 
+              padding-bottom: 0px
+              font-size: 12px
+          .buttom.move-2
+            bottom: 0px
+          .buttom.move-3
+            bottom: 0px
+// ↑section-1
+// ↓section-2
+
+section#section_today
+  position : static
+  
+  .container
+    top: 150px
+    .today-circle
+      background: $today-circle
+      left: 50%
+      transform: translate(-50%,0%)
+      width: 100%
+      height: 100%
+      border-radius: 100%
+
+
+    .today-image
+      position: absolute
+      height: 48%
+      width: 40%
+      bottom: 10%
+      right: 10%
+      opacity: 0.8
+      background: url("http://i.imgur.com/iFP2FFg.png")
+      background-size: 90%
+      background-repeat: no-repeat
+      background-position: center
+      z-index: 1
+    .today-title
+      position: absolute
+      font-size: $today-title-1
+      z-index: 1
+      font-weight: 900
+      display: inline
+      left: 20%
+      top: 20%
+      color: $today-title-color
+      p
+        font-size: $today-p-1
+        width: 60%
+        margin: 10px 0
+        text-align: justify
+      
+    
+
+    
+@media screen and (min-width: 1120px)
+  section#section_today
+    .container
+      height: 1000px
+      .today-circle
+        max-width: 1000px
+      
+@media screen and (min-width: 970px)and (max-width: 1119px)
+  section#section_today
+    .container
+      height: 970px
+      .today-circle
+        max-width: 970px
+          
+@media screen and (min-width: 630px) and (max-width: 969px)
+  section#section_today
+    .container
+      height: 630px
+      .today-circle
+        max-width: 630px
+      .today-title
+        left: 18%
+        top: 18%
+      
+@media screen and (min-width: 500px)and (max-width: 629px)
+  section#section_today
+    .container
+      height: 500px
+      .today-circle
+        max-width: 500px
+      .today-title
+        font-size: $today-title-2
+        left: 18%
+        top: 20%
+        p
+          font-size: $today-p-2
+          margin: 0
+      
+@media screen and  (max-width: 499px) and  (min-width: 400px)
+  section#section_today
+    .container
+      height: 400px
+      .today-circle
+        max-width: 400px
+
+      .today-image
+        opacity: 0.3
+      
+@media screen and  (max-width: 399px) and  (min-width: 300px)
+  section#section_today
+    .container
+      height: 300px
+      .today-circle
+        max-width: 300px
+      .today-title
+        font-size: $today-title-3
+        p
+          font-size: $today-p-3
+      .today-image
+        opacity: 0.3
+        right: 18%
+
+
+// ↑section-2
+// ↓section-3
+
+section#section_class
+  position: static
+  margin: 120px 0 
+  margin-bottom: 0px 
+  padding-top: 30px
+  
+  .row
+    
+    margin-top: 130px
+    height: 100%
+    .team
+      padding: 25vh 0
+      height: 100%
+      background: rgb(94, 155, 212)
+      a
+        top: 40%  
+        padding: 0px
+        display: block
+        text-align: center
+        color: $color-1
+        h1
+        
+          position: absolute
+          width: 80%
+        p
+          
+          position: absolute
+          width: 80%
+    .class-all
+
+      overflow: hidden
+      height: 100%
+      padding-right: 0
+      color: $color-1
+      .class-1
+        background: rgb(99, 195, 213)
+        
+        margin: 0 -15px
+        padding: 12.6vh 15px
+        text-align: center
+        a
+          top: 50%
+          transform: translate(0%,-100%)
+          
+      .class-2
+        background: rgb(87, 188, 168)
+        height: 100%
+        margin: 0 -15px
+        padding: 12.6vh 15px
+        text-align: center
+        a
+          top: 50%
+          transform: translate(0%,-100%)
+
+
+
+// ↑section-3
+// ↓footer
+
+footer#footer
+  
+  position : static
+  background: rgb(88, 85, 84)
+  
+  .container
+    padding: 15vh 0
+    
+    
+  
+  
+  
+// ↑footer
+
+  

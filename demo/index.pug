@@ -1,0 +1,71 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title 植栽園
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/style.css')
+  body
+    header.joumbotron
+      h1 植栽園
+      .cover
+    nav.navbar
+      a.menu
+        i.fa.fa-reorder
+      a.link 團隊簡介
+      a.link 植栽圖鑑
+      a.link 每日植語
+      a.link 聯絡我們
+    section#section_card
+      .container
+        .row
+          .h1 植栽圖鑑
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4.card
+            a
+              .img-1
+              .card-cover.card-position-1
+                p
+                  | 楓屬（學名：Acer）是植物學上面的一個屬，屬內種俗稱楓樹，早先獨立成槭樹科（Aceraceaedie）。最近分子生物學研究結果表明，它應該歸到無患子科中。本屬大概有110到200種，幾乎都位在北半球 . . .
+              .buttom.move-1
+                a 楓樹
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4.card
+            a
+              .img-2
+              .card-cover.card-position-2
+                p
+                  | 鳳凰木又名影樹、鳳凰樹、鳳凰花、金鳳、火鳳凰、洋楹、紅花楹、火樹、紅火楹、火焰樹、森之炎等，為豆科鳳凰木屬的植物。 它以華麗的花朵與蕨類植物般的綠葉出色。它生長在世界上許多熱帶亞熱帶地方作為裝飾和遮蔽太陽的樹木 . .
+              .buttom.move-2
+                a 鳳凰木
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4.card
+            a
+              .img-3.move
+              .card-cover.card-position-3
+                p
+                  | 仙人掌是石竹目仙人掌科的植物總稱，別名為仙巴掌、仙人扇、霸王樹。仙人掌具有相當豐富的形狀和大小，並擁有優良的保水適應力，多數生長於沙漠及半沙漠等乾燥少雨環境，在地球上所有沙漠也可以發現目前仙人掌科的植物有127屬共1896種 . . .
+              .buttom.move-3
+                a 仙人掌
+    section#section_today
+      .container
+        .today-image
+        .today-title
+          | 每日植語
+          p
+            | 仙人掌是石竹目仙人掌科的植物總稱，別名為仙巴掌、仙人扇、霸王樹。仙人掌具有相當豐富的形狀和大小，並擁有優良的保水適應力，多數生長於沙漠及半沙漠等乾燥少雨環境，在地球上所有沙漠也可以發現目前仙人掌科的植物有127屬共1896種 . . .
+        .today-circle
+    section#section_class
+      .row
+        .col-xs-6.col-sm-6.col-md-6.col-lg-6.team
+          a.h1 團隊簡介
+        .col-xs-6.col-sm-6.col-md-6.col-lg-6.class-all
+          .col-xs-12.col-sm-12.col-md-12.col-lg-12.class-1
+            a.h2 大型樹木
+          .col-xs-12.col-sm-12.col-md-12.col-lg-12.class-2
+            a.h2 小型盆栽
+    footer#footer
+      .container
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='js/index.js')
