@@ -26,7 +26,7 @@ $(window).scroll(function(){
     $(".navbar").removeClass('nav_list');
 
   }
-  else{
+  else if(scroll_height<=550&&win_width>=995){
     $(".navbar").addClass('nav_list');
     $(".navbar").removeClass('nav_menu'); 
   }

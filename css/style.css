@@ -10,6 +10,9 @@ body, html {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold; }
 
+a:focus, a:hover {
+  text-decoration: none; }
+
 .link {
   color: rgba(255, 255, 255, 0.8); }
 
@@ -35,7 +38,8 @@ header.joumbotron {
     border: 5px solid;
     font-weight: 900; }
   header.joumbotron .cover {
-    background: rgba(114, 158, 22, 0.4);
+    background: rgba(114, 158, 22, 0.2);
+    mix-blend-mode: hard-light;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -47,72 +51,74 @@ section#section_card {
   position: static;
   padding-top: 60px;
   padding-bottom: 90px; }
-  section#section_card .container {
-    top: 50px; }
-    section#section_card .container .row {
-      position: relative; }
-      section#section_card .container .row .h1 {
-        text-align: center; }
-      section#section_card .container .row .card {
-        height: 450px; }
-        section#section_card .container .row .card a .img-1 {
-          width: 100%;
-          height: 90%;
-          background: url("http://i.imgur.com/S4tX7u6.jpg");
-          background-size: cover;
-          background-position: center;
-          opacity: 0.5; }
-        section#section_card .container .row .card a .img-2 {
-          position: relative;
-          width: 100%;
-          height: 90%;
-          background: url("http://i.imgur.com/impWz9e.jpg");
-          background-size: cover;
-          background-position: center;
-          opacity: 0.5;
-          top: 50px; }
-        section#section_card .container .row .card a .img-3 {
-          width: 100%;
-          height: 90%;
-          background: url("http://i.imgur.com/llzZUGC.jpg");
-          opacity: 0.5;
-          background-size: cover;
-          background-position: center; }
-        section#section_card .container .row .card a .card-cover {
-          height: 200px;
-          width: 100%;
-          background-color: rgba(0, 0, 0, 0.7);
-          bottom: 200px;
-          z-index: 1; }
-        section#section_card .container .row .card a p {
-          color: rgba(255, 255, 255, 0.9);
-          padding: 15px 15px;
-          padding-bottom: 0px;
-          font-size: 14px;
-          text-align: justify; }
-        section#section_card .container .row .card a .card-position-2 {
-          bottom: 150px; }
-        section#section_card .container .row .card a .card-position-3 {
-          bottom: 200px; }
-        section#section_card .container .row .card .buttom {
-          position: absolute;
-          padding: 10px 0px;
-          width: 90px;
-          bottom: 50px;
-          z-index: 1;
-          background: rgba(0, 0, 0, 0.7);
-          border-radius: 10%;
-          left: 50%;
-          -webkit-transform: translate(-50%, 0%);
-          -ms-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-          text-align: center; }
-          section#section_card .container .row .card .buttom a {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 20px;
-            font-weight: 800; }
-      section#section_card .container .row .buttom.move-2 {
-        bottom: 0px; }
+  section#section_card .container .row {
+    position: relative; }
+    section#section_card .container .row .h1 {
+      text-align: center; }
+    section#section_card .container .row .card {
+      border-radius: 5%;
+      height: 500px; }
+      section#section_card .container .row .card a .img-1 {
+        width: 100%;
+        height: 90%;
+        background: url("http://i.imgur.com/S4tX7u6.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 1; }
+      section#section_card .container .row .card a .img-2 {
+        position: relative;
+        width: 100%;
+        height: 90%;
+        background: url("http://i.imgur.com/impWz9e.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        top: 50px; }
+      section#section_card .container .row .card a .img-3 {
+        width: 100%;
+        height: 90%;
+        background: url("http://i.imgur.com/llzZUGC.jpg");
+        opacity: 1;
+        background-size: cover;
+        background-position: center; }
+      section#section_card .container .row .card a .card-cover {
+        height: 200px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        bottom: 200px;
+        z-index: 1; }
+      section#section_card .container .row .card a p {
+        color: rgba(255, 255, 255, 0.9);
+        padding: 15px 15px;
+        padding-bottom: 0px;
+        font-size: 12px;
+        text-align: justify;
+        line-height: 200%;
+        letter-spacing: 3px;
+        cursor: pointer; }
+      section#section_card .container .row .card a .card-position-2 {
+        bottom: 150px; }
+      section#section_card .container .row .card a .card-position-3 {
+        bottom: 200px; }
+      section#section_card .container .row .card .buttom {
+        position: absolute;
+        padding: 5px 0px;
+        width: 90px;
+        bottom: 60px;
+        z-index: 1;
+        background: rgba(62, 58, 57, 0.9);
+        border-radius: 10%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        text-align: center;
+        cursor: pointer; }
+        section#section_card .container .row .card .buttom a {
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 20px; }
+    section#section_card .container .row .buttom.move-2 {
+      bottom: 10px; }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
   section#section_card .container .row .card a .img-3 {
@@ -125,9 +131,9 @@ section#section_card {
     padding: 15px;
     padding-bottom: 0px; }
   section#section_card .container .row .card .buttom.move-2 {
-    bottom: 0px; }
+    bottom: 10px; }
   section#section_card .container .row .card .buttom.move-3 {
-    bottom: 0px; } }
+    bottom: 10px; } }
 
 @media screen and (max-width: 499px) {
   section#section_card .container .row .card a .img-3 {
@@ -139,11 +145,12 @@ section#section_card {
   section#section_card .container .row .card a p {
     padding: 15px;
     padding-bottom: 0px;
-    font-size: 12px; }
+    font-size: 12px;
+    line-height: 160%; }
   section#section_card .container .row .card .buttom.move-2 {
-    bottom: 0px; }
+    bottom: 10px; }
   section#section_card .container .row .card .buttom.move-3 {
-    bottom: 0px; } }
+    bottom: 10px; } }
 
 section#section_today {
   position: static; }
@@ -158,6 +165,15 @@ section#section_today {
       width: 100%;
       height: 100%;
       border-radius: 100%; }
+    section#section_today .container .tree {
+      width: 15%;
+      height: 18%;
+      background: url("http://i.imgur.com/t5VMZeH.png");
+      background-size: cover;
+      left: 80.5%;
+      -webkit-transform: rotate(14deg);
+      -ms-transform: rotate(14deg);
+      transform: rotate(14deg); }
     section#section_today .container .today-image {
       position: absolute;
       height: 48%;
@@ -183,7 +199,8 @@ section#section_today {
         font-size: 14px;
         width: 60%;
         margin: 10px 0;
-        text-align: justify; }
+        text-align: justify;
+        line-height: 200%; }
 
 @media screen and (min-width: 1120px) {
   section#section_today .container {
@@ -224,6 +241,12 @@ section#section_today {
     height: 400px; }
     section#section_today .container .today-circle {
       max-width: 400px; }
+    section#section_today .container .today-title {
+      font-size: 20px;
+      line-height: 200%; }
+      section#section_today .container .today-title p {
+        font-size: 10px;
+        line-height: 200%; }
     section#section_today .container .today-image {
       opacity: 0.3; } }
 
@@ -233,14 +256,17 @@ section#section_today {
     section#section_today .container .today-circle {
       max-width: 300px; }
     section#section_today .container .today-title {
-      font-size: 20px; }
+      font-size: 18px;
+      line-height: 50%; }
       section#section_today .container .today-title p {
-        font-size: 10px; }
+        font-size: 10px;
+        line-height: 150%; }
     section#section_today .container .today-image {
       opacity: 0.3;
       right: 18%; } }
 
 section#section_class {
+  overflow: hidden;
   position: static;
   margin: 120px 0;
   margin-bottom: 0px;

@@ -1,8 +1,8 @@
 $color-1: rgba(255,255,255,0.8)
 $nav-text-color-1: rgba(114, 158, 22,1)
 $background-color-1: rgba(0,0,0,0.6)
-$green-color-cover-1: rgba(114, 158, 22,0.4)
-$card-buttom-color: rgba(0,0,0,0.7)
+$green-color-cover-1: rgba(114, 158, 22,0.2)
+$card-buttom-color: rgba(62, 58, 57,0.9)
 $menu-font-size: 30px
 $card-height: 90%
 $card-image-1: url('http://i.imgur.com/S4tX7u6.jpg')
@@ -47,6 +47,10 @@ body,html
   
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
   font-weight: bold
+
+a:focus, a:hover
+  text-decoration: none
+
 // ----------
 // ↑ body and title
 
@@ -76,6 +80,7 @@ header.joumbotron
     font-weight: 900
   .cover
     background: $green-color-cover-1
+    mix-blend-mode: hard-light
     width: 100%
     height: 100%
     position: absolute
@@ -152,13 +157,14 @@ section#section_card
   padding-top : 60px
   padding-bottom : 90px
   .container
-    top: 50px
+    
     .row
       position : relative
       .h1
         text-align: center
       .card
-        height: 450px
+        border-radius: 5%
+        height: 500px
         a
           .img-1
             width: 100%
@@ -166,7 +172,7 @@ section#section_card
             background: $card-image-1
             background-size: cover
             background-position: center
-            opacity: 0.5
+            opacity: 1
           .img-2
             position: relative
             width: 100%
@@ -174,13 +180,13 @@ section#section_card
             background: $card-image-2
             background-size: cover
             background-position: center
-            opacity: 0.5
+            opacity: 1
             top: 50px
           .img-3
             width: 100%
             height: $card-height
             background: $card-image-3
-            opacity: 0.5
+            opacity: 1
             background-size: cover
             background-position: center
             
@@ -195,8 +201,12 @@ section#section_card
             color: rgba(255,255,255,0.9)
             padding: 15px 15px
             padding-bottom: 0px
-            font-size: 14px
+            font-size: 12px
             text-align: justify
+            line-height: 200%
+            letter-spacing: 3px
+            
+            cursor: pointer
             
           .card-position-2
             bottom: 150px
@@ -204,21 +214,22 @@ section#section_card
             bottom: 200px
         .buttom
           position: absolute
-          padding: 10px 0px
+          padding: 5px 0px
           width: 90px
-          bottom: 50px
+          bottom: 60px
           z-index: 1
           background: $card-buttom-color
           border-radius: 10%
           left: 50%
           transform: translate(-50%,0%)
           text-align: center
+          cursor: pointer
           a
             color: $color-1
             font-size: 20px
-            font-weight: 800
+  
       .buttom.move-2
-        bottom: 0px
+        bottom: 10px
     
             
 @media screen and (min-width: 500px) and (max-width: 900px)
@@ -236,10 +247,11 @@ section#section_card
             p
               padding: 15px 
               padding-bottom: 0px
+              
           .buttom.move-2
-            bottom: 0px
+            bottom: 10px
           .buttom.move-3
-            bottom: 0px
+            bottom: 10px
 @media screen and (max-width: 499px)
   section#section_card
     .container
@@ -256,10 +268,11 @@ section#section_card
               padding: 15px 
               padding-bottom: 0px
               font-size: 12px
+              line-height: 160%
           .buttom.move-2
-            bottom: 0px
+            bottom: 10px
           .buttom.move-3
-            bottom: 0px
+            bottom: 10px
 // ↑section-1
 // ↓section-2
 // ----------
@@ -275,6 +288,13 @@ section#section_today
       width: 100%
       height: 100%
       border-radius: 100%
+    .tree
+      width: 15%
+      height: 18%
+      background: url('http://i.imgur.com/t5VMZeH.png')
+      background-size: cover
+      left: 80.5%
+      transform: rotate(14deg)
 
 
     .today-image
@@ -303,6 +323,7 @@ section#section_today
         width: 60%
         margin: 10px 0
         text-align: justify
+        line-height: 200%
       
     
 
@@ -351,6 +372,12 @@ section#section_today
       height: 400px
       .today-circle
         max-width: 400px
+      .today-title
+        font-size: $today-title-3
+        line-height: 200%
+        p
+          font-size: $today-p-3
+          line-height: 200%
 
       .today-image
         opacity: 0.3
@@ -362,12 +389,15 @@ section#section_today
       .today-circle
         max-width: 300px
       .today-title
-        font-size: $today-title-3
+        font-size: 18px
+        line-height: 50%
         p
           font-size: $today-p-3
+          line-height: 150%
       .today-image
         opacity: 0.3
         right: 18%
+        
 
 // ----------
 
@@ -375,6 +405,7 @@ section#section_today
 // ↓section-3
 // ----------
 section#section_class
+  overflow: hidden
   position: static
   margin: 120px 0 
   margin-bottom: 0px 
@@ -502,5 +533,3 @@ footer#footer
 // ---------
 
 // ↑new nav
-
-  
