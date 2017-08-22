@@ -11,6 +11,11 @@ html
     header.joumbotron
       h1 植栽園
       .cover
+      .buttom_li_all
+        .buttom_li#1
+        .buttom_li#2
+        .buttom_li#3
+        .buttom_li#4
     nav.navbar
       .container
         a.menu
@@ -22,7 +27,7 @@ html
     section#section_card
       .container
         .row
-          .h1 植栽圖鑑
+          .h1(data-0="opacity: 0;" data-center="opacity: 1") 植栽圖鑑
           .col-xs-12.col-sm-6.col-md-4.col-lg-4.card
             a
               .img-1
@@ -31,7 +36,7 @@ html
                   | 楓屬（學名：Acer）是植物學上面的一個屬，屬內種俗稱楓樹，早先獨立成槭樹科（Aceraceaedie）。最近分子生物學研究結果表明，它應該歸到無患子科中。本屬大概有110到200種，幾乎都位在北半球 . . .
               .buttom.move-1
                 a 楓樹
-          .col-xs-12.col-sm-6.col-md-4.col-lg-4.card
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4.card(data-300-top="top: -50px" data-70-center="top: 30px")
             a
               .img-2
               .card-cover.card-position-2
@@ -64,9 +69,17 @@ html
           .col-xs-12.col-sm-12.col-md-12.col-lg-12.class-1
             a.h2 大型樹木
           .col-xs-12.col-sm-12.col-md-12.col-lg-12.class-2
-            a.h2 小型盆栽
+            a.h4 小型盆栽
     footer#footer
       .container
+        .footer_title.h3 聯絡我們
+        .footer_text 
+          P 電話:0912345678
+          p.footer_b 信箱:zxcasd123@gmail.com
+          p.footer_c 地址:彰化縣鹿港鎮忠三路558號
+        //- iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29144.72584001302!2d120.41836380958553!3d24.063109276325275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f7f75af5080f43b!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5Lit5b2w5oqV5YiG572y5Yue5YuV5a246IuR!5e0!3m2!1szh-TW!2stw!4v1503337656819', width='280', height='180', frameborder='0', style='border:0', allowfullscreen='')
+        .QRcode
+      
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
