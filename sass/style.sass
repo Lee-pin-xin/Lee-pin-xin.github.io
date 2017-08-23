@@ -1,7 +1,7 @@
-$color-1: rgba(255,255,255,0.8)
-$nav-text-color-1: rgba(255,255,255,0.8)
-$background-color-1: rgba(0,0,0,6)
-$green-color-cover-1: rgba(114, 158, 22,0.2)
+$color-1: rgba(255,255,255,0.85)
+$nav-text-color-1: rgba(114, 158, 22,0.8)
+$background-color-1: rgba(0,0,0,0.8)
+$green-color-cover-1: rgba(0, 0, 0,0.4)
 $card-buttom-color: rgba(62, 58, 57,0.9)
 $menu-font-size: 30px
 $card-height: 90%
@@ -20,6 +20,7 @@ $today-p-3: 10px
   // border: 1px solid 
   font-family: 微軟正黑體
   position: relative
+  
   
   // debug
   // header
@@ -42,7 +43,15 @@ $today-p-3: 10px
 body,html
   margin: 0
   padding: 0
-  height: 100%
+@media screen and (min-width: 970px)
+  html
+    overflow-y: scroll
+  body
+    height: initial
+    overflow: hidden
+    
+    
+  
   
   
   
@@ -67,22 +76,27 @@ header.joumbotron
   position: relative
   z-index: 0
   transition: 2s
+  
   h1
     position: relative
     display: inline-block
     text-align: center
-    margin: 300px 0
+    margin: 200px 0
     padding: 10px
     color: $color_1
     top: 50%
     left: 50%
-    transform: translate(-50%,-50%)
-    z-index: 1
-    border: 5px solid
-    font-weight: 900
+    transform: translate(-50%,0%)
+    z-index: 3
+    border: 10px solid
+    border-radius: 2.5% 
+    font-weight: 300
+    font-size: 150px
+    opacity: 1
+    
   .cover
     background: $green-color-cover-1
-    mix-blend-mode: hard-light
+    
     width: 100%
     height: 100%
     position: absolute
@@ -97,75 +111,15 @@ header.joumbotron
   .buttom_li
     position: relative
     margin: 15px 0px
-    border: 5px solid rgba(255,255,255,0.9)
+    border: 2.8px solid rgba(255,255,255,0.9)
     border-radius: 100%
     width: 15px
     height: 15px
     background-color: rgba(255,255,255,0)
     cursor: pointer
-
 // ----------
 
 // ↑header 
-// ↓old nav
-
-// ----------
-
-// .navbar
-//   position: fixed
-//   width: 100%
-//   text-align: center
-//   top: 0
-//   z-index: 999
-//   .link
-//     position: relative
-//     padding: 10px 77px
-//     font-size: 20px
-//     display: none
-//     background-color: $background-color-1
-//     color: $nav-text-color-1
-//     font-weight: 900
-    
-//   .menu
-//     display: inline-flex
-//     position: relative
-//     left: 42%
-    
-//     i
-//       font-size: 40px
-//       color: $nav-text-color-1
-//       padding:  30px 40px
-// .navbar.active
-//   .link
-//     display: block
-//   .menu
-//     i
-//       color: $nav-text-color-1
-//       background-color: $background-color-1
-      
-// @media screen and (min-width: 970px)
-  .navbar
-    position: absolute
-    top: 560px
-    .link
-      display: inline-flex
-      flex-flow: row nowrap
-      color: $color_1
-      background-color: transparent
-    .menu
-      display: none
-  .navbar.active
-    .link
-      display: inline-flex
-      position: fixed
-      
-
-
-
-// ----------
-
- 
-// ↑old nav
 // ↓section-1
 
 section#section_card
@@ -217,13 +171,14 @@ section#section_card
             background-color: rgba(0,0,0,0.7)
             bottom: 200px
             z-index: 1
+
           p
             color: rgba(255,255,255,0.9)
-            padding: 15px 15px
+            padding: 5px 15px
             padding-bottom: 0px
             font-size: 12px
             text-align: justify
-            line-height: 200%
+            line-height: 180%
             letter-spacing: 3px
             
             cursor: pointer
@@ -252,7 +207,24 @@ section#section_card
   
       .buttom.move-2
         bottom: 10px
-    
+section#section_card
+  .container
+    .row 
+      .card
+        &:hover
+          .card-cover
+            height: 450px
+            bottom: 450px
+            transition: 1s
+          .card-position-2
+            bottom: 400px
+          .card-position-3
+            bottom: 450px
+            
+          p
+            font-size: 20px
+            transition: 0.8s
+            
             
 @media screen and (min-width: 500px) and (max-width: 900px)
   section#section_card
@@ -274,6 +246,25 @@ section#section_card
             bottom: 10px
           .buttom.move-3
             bottom: 10px
+  section#section_card
+    .container
+      .row 
+        .card
+          &:hover
+            a
+              .card-cover
+                height: 450px
+                bottom: 450px
+                transition: 1s
+              .card-position-2
+                bottom: 400px
+              .card-cover.card-position-3
+                bottom: 400px
+              p
+                font-size: 20px
+                transition: 0.8s
+            
+         
 @media screen and (max-width: 499px)
   section#section_card
     .container
@@ -295,6 +286,23 @@ section#section_card
             bottom: 10px
           .buttom.move-3
             bottom: 10px
+  section#section_card
+    .container
+      .row 
+        .card
+          &:hover
+            a
+              .card-cover
+                height: 450px
+                bottom: 450px
+                transition: 1s
+              .card-position-2
+                bottom: 400px
+              .card-cover.card-position-3
+                bottom: 400px
+              p
+                font-size: 20px
+                transition: 0.8s
 // ↑section-1
 // ↓section-2
 // ----------
@@ -323,7 +331,7 @@ section#section_today
       position: absolute
       height: 48%
       width: 40%
-      bottom: 10%
+      bottom: 25%
       right: 10%
       opacity: 0.8
       background: url("http://i.imgur.com/iFP2FFg.png")
@@ -338,11 +346,11 @@ section#section_today
       font-weight: 900
       display: inline
       left: 20%
-      top: 20%
+      top: 28%
       color: $today-title-color
       p
         font-size: $today-p-1
-        width: 60%
+        width: 40%
         margin: 10px 0
         text-align: justify
         line-height: 200%
@@ -386,6 +394,7 @@ section#section_today
         top: 20%
         p
           font-size: $today-p-2
+          width: 60%
           margin: 0
       
 @media screen and  (max-width: 499px) and  (min-width: 400px)
@@ -399,8 +408,8 @@ section#section_today
         line-height: 200%
         p
           font-size: $today-p-3
-          line-height: 200%
-
+          line-height: 130%
+          width: 80%
       .today-image
         opacity: 0.3
       
@@ -416,6 +425,8 @@ section#section_today
         p
           font-size: $today-p-3
           line-height: 150%
+          line-height: 130%
+          width: 80%
       .today-image
         opacity: 0.3
         right: 18%
@@ -434,14 +445,13 @@ section#section_class
   padding-top: 30px
   
   .row
-    
     margin-top: 130px
-    height: 50vh
+    height: 500px
 
     .team
       padding: 0 0
       height: 100%
-      background: rgb(94, 155, 212)
+      background: rgba(94, 155, 212,1)
       a
         top: 40%  
         padding: 0px
@@ -489,7 +499,34 @@ section#section_class
           cursor: pointer
           
 
-
+section#section_class
+  .row
+    
+    .team
+      
+      &:hover
+        background: rgba(94, 155, 212,0.5)
+        transition: 1s
+        
+        a
+          transition: 1s
+          color: rgba(20,20,20,0.8)
+    .class-all
+      .class-1
+        &:hover
+          transition: 1s
+          background: rgba(99, 195, 213,0.5)
+          a
+            color: rgba(20,20,20,0.8)
+            transition: 1s
+      .class-2
+        &:hover
+          transition: 1s
+          background: rgba(87, 188, 168,0.5)
+          a
+            color: rgba(20,20,20,0.8)
+            transition: 1s
+    
 // ----------
 
 // ↑section-3
@@ -501,37 +538,58 @@ footer#footer
   background: rgba(88, 85, 84,0.9)
   
   .container
-    position: relative
-    padding: 15vh 0
-  .footer_title
-    position: absolute
-    top: 10%
-    left: 2.5%
-    
-  .footer_text
-    position: absolute
-    top: 45%
-    left: 2.5%
-    font-size: 14px
-    line-height: 200%
-    letter-spacing: 6px
-    .footer_b
-      letter-spacing: 5px
-    .footer_c
-      margin: 0
-  .map
-    position: absolute
-    top: 10%
-    left: 50%
-  .QRcode
-    position: absolute
-    width: 80px
-    height: 80px
-    background: #eee 
-    left: 32%
-    top: 20%
+    overflow: hidden
+    height: 300px
+    .col-xs-12.col-sm-12.col-lg-6
 
-  
+      position: relative
+      height: 100%
+      .footer_title
+        
+        top: 10%
+        left: 2.5%
+        
+      .footer_text
+        
+        top: 11.25%
+        left: 25%
+        font-size: 14px
+        line-height: 300%
+        letter-spacing: 8px
+        p
+          
+        .footer_b
+          
+          letter-spacing: 6.5px
+        .footer_c
+          
+          margin: 0
+      .QRcode
+        top: -24.5%
+        left: 2.5%
+
+        width: 95px
+        height: 95px
+        background: #eee 
+    .col-xs-12.col-sm-12.col-lg-6
+      position: relative
+      height: 100%
+         
+      .map
+        position: absolute
+        top: 13.15%
+        left: 0
+@media screen and (max-width: 500px)
+  footer#footer
+    .container
+      .col-xs-12.col-sm-12.col-lg-6
+        .footer_text
+          left: 2.5%
+        .QRcode
+          display: none
+      .col-xs-12.col-sm-12.col-lg-6
+        .map
+          display: none
 // ---------
 
 // ↑footer
@@ -542,27 +600,33 @@ footer#footer
   width: 100%
   top: 0
   z-index: 10
-  background-color: rgba(45, 44, 44,7)
+  background-color: $background-color-1
   .container
     .menu
-      color: $nav-text-color-1
+      color: $color_1
       left: 97.5%
       font-size: $menu-font-size
       z-index: 11
       transform: translateX(-100%)
-      
+      cursor: pointer
     .link
       display: none
 
 .navbar.nav_list
-  top: -100px
+  position: fixed
+  top: 0
+  display: block
+  background-color: $background-color-1
   text-align: center
+  width: 100%
+  
   .container
     .menu
       display: none
     .link
-      padding: 0px 75px
-      display: inline-flex
+      cursor: pointer
+      padding: 10px 75px
+      display: inline-block
       flex-flow: row nowrap
       font-size: 20px
       color: $color_1
@@ -573,22 +637,26 @@ footer#footer
   width: 100%
   top: 0
   background-color: $background-color-1
+  
   .container
     .menu
-      color: $nav-text-color-1
+      color: $color_1
       left: 97.5%
       font-size: $menu-font-size
+      cursor: pointer
     .link
       text-align: center
+      cursor: pointer
       display: block
       position: fixed
       flex-flow: column nowrap
       position: relative
       padding: 10px 77px
       font-size: 20px
-      color: $nav-text-color-1
+      color: $color_1
       font-weight: 900
   
-// ---------
+  // ---------
 
 // ↑new nav
+
