@@ -20,14 +20,9 @@ $(".buttom_li#2").on("click", function() {
 function myfunction(){
   var win_width = $(window).width();
   if (win_width>=970) {
+    var s = skrollr.init() 
    $(".navbar").addClass('nav_list');
    $(".navbar").removeClass('nav_menu');
-   var s = skrollr.init(
-     {
-      mobileCheck:function(){},
-      mobileDeceleration:0.004,
-     }
-   ) 
    console.log('PC');
    backdround_run(1);
   }
@@ -75,12 +70,10 @@ $(window).on('resize', function(){
    if (win_width>=970) {
     $(".navbar").addClass('nav_list');
     $(".navbar").removeClass('nav_menu'); 
-    var s = skrollr.init()
     console.log('PC');
    }
    else{
      $(".navbar").addClass('nav_menu');
-     var s = "";
      $(".navbar").removeClass('nav_list');
      console.log('mobile');
   }
