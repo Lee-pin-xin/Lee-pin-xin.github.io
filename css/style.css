@@ -7,12 +7,16 @@ body, html {
   margin: 0;
   padding: 0; }
 
+body {
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/sakura.png"); }
+
 @media screen and (min-width: 970px) {
   html {
     overflow-y: scroll; }
   body {
     height: initial;
-    overflow: hidden; } }
+    overflow: hidden;
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/sakura.png"); } }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold; }
@@ -48,7 +52,7 @@ header.joumbotron {
     border: 10px solid;
     border-radius: 2.5%;
     font-weight: 300;
-    font-size: 150px;
+    font-size: 100px;
     opacity: 1; }
   header.joumbotron .cover {
     background: rgba(0, 0, 0, 0.4);
@@ -509,7 +513,7 @@ footer#footer {
     display: none; }
   .navbar.nav_list .container .link {
     cursor: pointer;
-    padding: 10px 75px;
+    padding: 10px 30px;
     display: inline-block;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

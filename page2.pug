@@ -1,0 +1,84 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title 植栽園
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/page2.css')
+    
+  body#skrollr-body(onload='myfunction()')
+    header.joumbotron
+      h1 植栽園
+      .cover
+      .buttom_li_all
+        .buttom_li#1
+        .buttom_li#2
+        .buttom_li#3
+        .buttom_li#4
+    nav.navbar
+      .container
+        a.menu
+          i.fa.fa-reorder
+        a(href="index.html#section_card" ).link 植栽圖鑑
+        a(href="index.html#section_today" ).link 每日植語
+        a(href="index.html#section_class" ).link 團隊簡介
+        a(href="index.html#section_class" ).link 植物類別
+        a(href="#footer" ).link 聯絡我們
+    
+    section#section_tree
+      .container
+        .row
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .img_tree#tree_1
+
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .text_tree#text_1
+              h3 楓樹
+              p 楓香樹別稱楓樹是一種落葉大喬木，樹形呈圓錐形，高約20－40公尺，高可達40公尺，胸徑最大可達1公尺以上葉為單葉互生心形，掌狀3裂或幼時5－7裂成三角形顏色隨季節轉變，入秋後轉變成黃色至翌年春季落葉時轉變成紅色葉緣鋸齒狀，齒尖有腺狀突，長約6－13公分，寬約6－15公分。
+        .row#card_2
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .img_tree#tree_2
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .text_tree#text_2
+              h3 鐵樹
+              p 蘇鐵，又稱為鐵樹是地球上現存最古老的種子植物常綠棕櫚狀木本植物，莖高達5m.葉羽狀複葉，長達0.5~2.4m，厚革質而堅硬；羽片條狀，長達18cm，邊緣顯著反卷,雄球花長圓柱形，雌球花略呈扁球形花期6~7月，種子10月成熟供觀賞；種子有毒莖髓可采澱粉供食用；葉入藥。
+        
+        .row
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .img_tree#tree_3
+
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .text_tree#text_3
+              h3 落羽松
+              p 樹冠直立高大，高可達50公尺，胸徑可達5公尺；樹皮為長條片狀脫落，棕色；樹幹尖削度大，幹基膨大，老樹常有板根及膝根的生長,在台灣又稱為美國水松。1901年由日本人引進台灣，中文名稱落羽松但是落羽松其實不是松樹，而是屬於杉樹的一種，所以有一些台灣的學者主張將其正名為「落羽杉」
+          
+        .row#card_2
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .img_tree#tree_4
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .text_tree#text_4
+              h3 榕樹
+              p 常綠大喬木，主根粗壯，莖幹粗實，高可達 20 公尺以上，葉互生 ，葉基基部呈鈍圓形或楔形，葉形是卵形或橢圓形，常有懸垂氣生根可用來幫助呼吸，此氣生根若深入土中，則能逐漸發育成支柱根，可用於支撐整棵樹也有助於水份養份的吸收。
+
+
+    footer#footer
+      .container
+        .col-xs-12.col-sm-12.col-lg-6
+          .footer_title.h3 聯絡我們
+          .footer_text 
+            P 電話:0912345678
+            p.footer_b 信箱:zxcasd123@gmail.com
+            p.footer_c 地址:彰化縣鹿港鎮忠三路558號
+          .QRcode
+        .col-xs-12.col-sm-12.col-lg-6 
+          iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29144.72584001302!2d120.41836380958553!3d24.063109276325275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f7f75af5080f43b!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5Lit5b2w5oqV5YiG572y5Yue5YuV5a246IuR!5e0!3m2!1szh-TW!2stw!4v1503337656819', width='300', height='180', frameborder='0', style='border:0', allowfullscreen='')
+        
+      
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://cdn.jsdelivr.net/skrollr/0.6.30/skrollr.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='js/page2.js')
+    
+    

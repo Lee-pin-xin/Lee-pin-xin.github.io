@@ -1,0 +1,84 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title 植栽園
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/page3.css')
+    
+  body#skrollr-body(onload='myfunction()')
+    header.joumbotron
+      h1 植栽園
+      .cover
+      .buttom_li_all
+        .buttom_li#1
+        .buttom_li#2
+        .buttom_li#3
+        .buttom_li#4
+    nav.navbar
+      .container
+        a.menu
+          i.fa.fa-reorder
+        a(href="index.html#section_card" ).link 植栽圖鑑
+        a(href="index.html#section_today" ).link 每日植語
+        a(href="index.html#section_class" ).link 團隊簡介
+        a(href="index.html#section_class" ).link 植物類別
+        a(href="#footer" ).link 聯絡我們
+    
+    section#section_tree
+      .container
+        .row
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .img_tree#tree_1
+
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .text_tree#text_1
+              h3 石蓮花
+              p 又稱寶石花、粉蓮、朧月、初霜、石蓮掌、蓮花掌、風車草、觀音草、蓮座草、石膽草、神明草，屬景天科植物，原產地墨西哥伊達爾戈州。人類食用石蓮花的歷史相當悠久，東羅馬帝國的查理曼大帝就在屋頂上遍植石蓮花，墨西哥人認為將它種植在屋頂上有避雷擊之效。葉面多肉，男女老少，皆可食用。
+        .row#card_2
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .img_tree#tree_2
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .text_tree#text_2
+              h3 仙人掌
+              p 仙人掌是石竹目仙人掌科（學名：Cactaceae）的植物總稱，別名為仙巴掌、仙人扇、霸王樹。仙人掌具有相當豐富的形狀和大小，並擁有優良的保水適應力，多數生長於沙漠及半沙漠等乾燥少雨環境，在地球上所有沙漠也可以發現。仙人掌為多肉植物的一類，目前仙人掌科的植物有127屬共1896種。
+        
+        .row
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .img_tree#tree_3
+
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .text_tree#text_3
+              h3 月橘
+              p 別稱七里香、九里香、十里香等。原產於亞洲南部，現分布於台灣、中國、琉球、菲律賓、印尼、馬來西亞、斯里蘭卡、印度、澳洲等地，中國國內分布於海南、廣東、福建及廣西、貴州、雲南、湖南四省區的南部，多長於海拔高的山地疏林或密林中或低地的丘陵地之中，喜溫暖較濕潤的氣候，不耐寒。
+          
+        .row#card_2
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .img_tree#tree_4
+          .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .text_tree#text_4
+              h3 琴葉榕
+              p 琴葉榕（學名：Ficus lyrata）；第個名係大琴榕；佢係桑科榕屬嘅長年生常綠灌木或喬木，原產地喺非洲嘅熱帶地區，而家喺非洲嘅熱帶雨林入面，中國嘅東南邊都可以搵到佢。呢種樹一般喺山地嘅疏林、灌木叢或村落嘅路邊嗰度。
+
+
+    footer#footer
+      .container
+        .col-xs-12.col-sm-12.col-lg-6
+          .footer_title.h3 聯絡我們
+          .footer_text 
+            P 電話:0912345678
+            p.footer_b 信箱:zxcasd123@gmail.com
+            p.footer_c 地址:彰化縣鹿港鎮忠三路558號
+          .QRcode
+        .col-xs-12.col-sm-12.col-lg-6 
+          iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29144.72584001302!2d120.41836380958553!3d24.063109276325275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f7f75af5080f43b!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5Lit5b2w5oqV5YiG572y5Yue5YuV5a246IuR!5e0!3m2!1szh-TW!2stw!4v1503337656819', width='300', height='180', frameborder='0', style='border:0', allowfullscreen='')
+        
+      
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://cdn.jsdelivr.net/skrollr/0.6.30/skrollr.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='js/page3.js')
+    
+    
