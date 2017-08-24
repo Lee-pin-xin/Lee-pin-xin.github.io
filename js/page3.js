@@ -22,7 +22,7 @@ $(".menu").on("click", function() {
 function myfunction(){
   var win_width = $(window).width();
   if (win_width>=970) {
-    var s = skrollr.init() 
+     
    $(".navbar").addClass('nav_list');
    $(".navbar").removeClass('nav_menu');
    console.log('PC');

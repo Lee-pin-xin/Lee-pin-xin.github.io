@@ -169,7 +169,8 @@ footer#footer {
         left: 2.5%;
         width: 95px;
         height: 95px;
-        background: #eee; }
+        background: url("http://s01.calm9.com/qrcode/2017-08/51IQ7GS9T3.png");
+        background-size: cover; }
     footer#footer .container .col-xs-12.col-sm-12.col-lg-6 {
       position: relative;
       height: 100%; }
@@ -251,3 +252,6 @@ footer#footer {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.85);
     font-weight: 900; }
+
+h3 {
+  margin-top: 0px; }
