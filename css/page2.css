@@ -232,7 +232,7 @@ footer#footer {
   background-color: rgba(0, 0, 0, 0.8); }
   .navbar.nav_menu.active .container .menu {
     color: rgba(255, 255, 255, 0.85);
-    left: 97.5%;
+    left: 95%;
     font-size: 30px;
     cursor: pointer; }
   .navbar.nav_menu.active .container .link {
