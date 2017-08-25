@@ -369,7 +369,7 @@ section#section_class {
       height: 100%;
       background: #5e9bd4; }
       section#section_class .row .team a {
-        top: 40%;
+        top: 25%;
         padding: 0px;
         display: block;
         text-align: center;
@@ -380,7 +380,11 @@ section#section_class {
           width: 80%; }
         section#section_class .row .team a p {
           position: absolute;
-          width: 80%; }
+          width: 70%;
+          -webkit-transform: translateX(25%);
+          -ms-transform: translateX(25%);
+          transform: translateX(25%);
+          line-height: 150%; }
     section#section_class .row .class-all {
       overflow: hidden;
       height: 100%;
