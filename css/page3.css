@@ -37,7 +37,7 @@ header.joumbotron {
     position: relative;
     display: inline-block;
     text-align: center;
-    margin: 200px 0;
+    margin: 310px 0;
     padding: 10px;
     color: rgba(255, 255, 255, 0.85);
     top: 50%;
@@ -62,7 +62,7 @@ header.joumbotron {
 
 .buttom_li_all {
   position: absolute;
-  top: 50%;
+  top: 54.5%;
   right: 2.5%;
   -webkit-transform: translateY(-75%);
   -ms-transform: translateY(-75%);
